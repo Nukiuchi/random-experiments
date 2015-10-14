@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+   width:200px;
+   height:200px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div#myDiv {
+transform-origin:0% 100%;
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(-60deg); /* Standard syntax */
+}
+
+div#myDiv2 {
+transform-origin:0% 100%;
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); /* Safari */
+    transform: skewX(-60deg); /* Standard syntax */
+}
+div#rotate {
+transform-origin:0% 100%;
+position:absolute;
+top:-50%;
+left:50%;
+background:none;
+border: 0px;
+transform:rotate(30deg);
+}
+div#rotate2 {
+transform-origin:0% 100%;
+position:absolute;
+top:-50%;
+left:50%;
+background:none;
+border: 0px;
+transform:rotate(60deg);
+}
+div#circle {
+position:relative;
+background:none;
+   width:200px;
+   height:200px;
+   border-radius:100px; 
+overflow:hidden;
+}
+</style>
+</head>
+<body>
+
+<p>The skewX() method skews an element along the X-axis by the given angle.</p>
+<p>Inserting the skewed element into container allows rotating the skewed
+element without altering the element's form.</p>
+<div id="circle">
+<div id="rotate">
+<div id="myDiv">
+This div element is skewed 20 degrees along the X-axis.
+</div>
+</div>
+<div id="rotate2">
+<div id="myDiv2">
+This div element is skewed 20 degrees along the X-axis.
+</div>
+</div>
+</div>
+</body>
+</html>
